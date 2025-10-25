@@ -1,3 +1,7 @@
+#include <assert.h>
+#include <stdlib.h>
+#include <stdbool.h>
+
 #include "play_card.h"
 
 // function for creating a playing card

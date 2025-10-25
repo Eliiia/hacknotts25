@@ -39,7 +39,7 @@ PokerHandEvaluation evaluate_poker_hand_type(PCard** played_cards, int num_playe
 
 
 // functions to check for specific hand types
-/*bool hand_is_flush_five(int num_played_cards, PCard** played_cards);
+bool hand_is_flush_five(int num_played_cards, PCard** played_cards);
 bool hand_is_flush_house(int num_played_cards, PCard** played_cards);
 bool hand_is_five_of_a_kind(int num_played_cards, PCard** played_cards);
 bool hand_is_full_house(int num_played_cards, PCard** played_cards);
@@ -49,4 +49,4 @@ bool hand_is_three_of_a_kind(int num_played_cards, PCard** played_cards);
 bool hand_is_one_pair(int num_played_cards, PCard** played_cards);
 bool hand_is_two_pair(int num_played_cards, PCard** played_cards);
 bool hand_is_flush(int num_played_cards, PCard** played_cards);
-bool hand_is_straight(int num_played_cards, PCard** played_cards);*/
+bool hand_is_straight(int num_played_cards, PCard** played_cards);

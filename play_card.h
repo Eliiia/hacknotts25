@@ -78,7 +78,7 @@ bool pcard_is_face_card(PCard* card);
 int pcard_chip_value(PCard* card);
 
 // function for determining mult value of card
-int pcard_get_mult_value(PCard* card); // mult given on top
+int pcard_get_mult_value_when_scored(PCard* card); // mult given on top
 double pcard_get_mult_multiplier_when_scored(PCard* card);
 double pcard_get_mult_multiplier_when_held(PCard* card);
 

@@ -1,4 +1,7 @@
+#ifndef POKER_HAND_H
 #include "poker_hand.h"
+#define POKER_HAND_H
+#endif
 
 void poker_hand_table_apply_planet_card(PokerHandTableState* state, PlanetCard planet_card) {
     if (!state) return;
@@ -56,4 +59,3 @@ void poker_hand_table_apply_planet_card(PokerHandTableState* state, PlanetCard p
             break;
     }
 }
-

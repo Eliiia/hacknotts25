@@ -58,6 +58,12 @@
   "C_Cpp_Runner.msvcSecureNoWarnings": false,
   "files.associations": {
     "stdbool.h": "c",
-    "play_card.h": "c"
+    "play_card.h": "c",
+    "card.h": "c",
+    "poker_hand.h": "c",
+    "game_state.h": "c",
+    "hand_calc.h": "c",
+    "stdlib.h": "c",
+    "stdio.h": "c"
   }
 }
