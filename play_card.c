@@ -96,7 +96,7 @@ bool pcard_has_retrigger(PCard* card) {
 }
 
 // function for checking if card is destroyed
-bool pcard_is_destroyed_after_scoring(PCard* card); {
+bool pcard_is_destroyed_after_scoring(PCard* card) {
     if (card->enhancement == GLASS) {
         // 1 in 4 chance of being destroyed
         int chance = rand() % 4;
