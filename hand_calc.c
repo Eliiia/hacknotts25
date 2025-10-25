@@ -41,7 +41,6 @@ PokerHand get_poker_hand_state(PokerHandType hand_type, PokerHandTableState* han
 }
 
 bool hand_is_flush(int num_played_cards, PCard** played_cards) {
-    // TODO MAYBE REMOVE THIS BIT:
     if (num_played_cards < 5) {
         return false; // can't be flush if less than 5 cards
     }
@@ -57,7 +56,6 @@ bool hand_is_flush(int num_played_cards, PCard** played_cards) {
     }
     return all_same_suit;
 }
-
 bool hand_is_five_of_a_kind(int num_played_cards, PCard** played_cards) {
     if (num_played_cards < 5) {
         return false; // can't be five of a kind if less than 5 cards
@@ -77,7 +75,6 @@ bool hand_is_five_of_a_kind(int num_played_cards, PCard** played_cards) {
     }
     return false;
 }
-
 bool hand_is_three_of_a_kind(int num_played_cards, PCard** played_cards) {
     if (num_played_cards < 3) return false; // can't be three of a kind if less than 3 cards
 
@@ -95,7 +92,6 @@ bool hand_is_three_of_a_kind(int num_played_cards, PCard** played_cards) {
     }
     return false;
 }
-
 bool hand_is_two_pair(int num_played_cards, PCard** played_cards) {
     if (num_played_cards < 4) return false; // can't be two pair if less than 4 cards
 
@@ -114,7 +110,6 @@ bool hand_is_two_pair(int num_played_cards, PCard** played_cards) {
     }
     return pair_count >= 2;
 }
-
 bool hand_is_straight(int num_played_cards, PCard** played_cards) {
     if (num_played_cards < 5) return false; // can't be straight if less than 5 cards
 
@@ -136,7 +131,6 @@ bool hand_is_straight(int num_played_cards, PCard** played_cards) {
     }
     return true;
 }
-
 bool hand_is_four_of_a_kind(int num_played_cards, PCard** played_cards) {
     if (num_played_cards < 4) {
         return false; // can't be four of a kind if less than 4 cards

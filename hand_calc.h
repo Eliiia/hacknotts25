@@ -36,8 +36,6 @@ typedef struct {
 } PokerHandEvaluation;
 PokerHandEvaluation evaluate_poker_hand_type(PCard** played_cards, int num_played_cards);
 
-
-
 // functions to check for specific hand types
 bool hand_is_flush_five(int num_played_cards, PCard** played_cards);
 bool hand_is_flush_house(int num_played_cards, PCard** played_cards);
