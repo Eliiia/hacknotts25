@@ -8,6 +8,7 @@ typedef enum {
     FULL_HOUSE,
     FOUR_OF_A_KIND,
     STRAIGHT_FLUSH,
+    ROYAL_FLUSH,
     FIVE_OF_A_KIND,
     FLUSH_HOUSE,
     FLUSH_FIVE
@@ -32,6 +33,7 @@ typedef struct {
     PokerHand full_house;
     PokerHand four_of_a_kind;
     PokerHand straight_flush;
+    PokerHand royal_flush;
     PokerHand five_of_a_kind;
     PokerHand flush_house;
     PokerHand flush_five;
@@ -52,6 +54,7 @@ typedef enum {
     ERIS_CARD
 } PlanetCard;
 
+// Apply a planet card to upgrade a poker hand on the table
 void poker_hand_table_apply_planet_card(PokerHandTableState* state, PlanetCard planet_card);
 
 /* default table:
@@ -76,6 +79,7 @@ static const PokerHandTableState DEFAULT_POKER_HAND_STATE = {
     .full_house      = { FULL_HOUSE,       40, 4, 1, 0 },
     .four_of_a_kind  = { FOUR_OF_A_KIND,   60, 7, 1, 0 },
     .straight_flush  = { STRAIGHT_FLUSH,  100, 8, 1, 0 },
+    .royal_flush     = { ROYAL_FLUSH,     150, 10, 1, 0 },
     .five_of_a_kind  = { FIVE_OF_A_KIND,  120, 12, 1, 0 },
     .flush_house     = { FLUSH_HOUSE,     140, 14, 1, 0 },
     .flush_five      = { FLUSH_FIVE,      160, 16, 1, 0 }

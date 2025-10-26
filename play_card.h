@@ -19,20 +19,20 @@ typedef enum {
 
 // rank,,,
 typedef enum {
-    NONE_RANK,
-    TWO = 2,
-    THREE = 3,
-    FOUR = 4,
-    FIVE = 5,
-    SIX = 6,
-    SEVEN = 7,
-    EIGHT = 8,
-    NINE = 9,
-    TEN = 10,
-    JACK = 10,
-    QUEEN = 10,
-    KING = 10,
-    ACE = 11
+    NONE_RANK, // 0
+    TWO, // 1
+    THREE, 
+    FOUR,
+    FIVE,
+    SIX,
+    SEVEN,
+    EIGHT,
+    NINE,
+    TEN, // 9
+    JACK, // 10
+    QUEEN, // 11
+    KING, // 12
+    ACE // 13
 } Rank;
 
 // enhancements,,,
@@ -79,8 +79,8 @@ int pcard_chip_value(PCard* card);
 
 // function for determining mult value of card
 int pcard_get_mult_value_when_scored(PCard* card); // mult given on top
-double pcard_get_mult_multiplier_when_scored(PCard* card);
-double pcard_get_mult_multiplier_when_held(PCard* card);
+double pcard_get_mult_multiplier_when_scored(PCard* card); // multiplier given on top when played and scored
+double pcard_get_mult_multiplier_when_held(PCard* card); // multiplier given on top when not played and held in hand instead
 
 // function for cards to do with balance: cards can give money at end of game or when played
 int pcard_get_balance_change_on_end(PCard* card);

@@ -29,7 +29,7 @@ int pcard_chip_value(PCard* card) {
     }
     else {
         assert(card->rank != NONE_RANK); // only way this is possible is if card is stone
-        return card->rank;
+        return (int) (card->rank)+1; // +1 because TWO is 1, THREE is 2, ..., ACE is 13
     }
 }
 
@@ -64,7 +64,7 @@ double pcard_get_mult_multiplier_when_scored(PCard* card) {
     }
 
     return mult_multiplier;
-} // + steel; if held in hand
+}
 
 double pcard_get_mult_multiplier_when_held(PCard* card) {
     if (card->enhancement == STEEL) {

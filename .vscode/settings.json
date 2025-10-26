@@ -64,6 +64,8 @@
     "game_state.h": "c",
     "hand_calc.h": "c",
     "stdlib.h": "c",
-    "stdio.h": "c"
+    "stdio.h": "c",
+    "player_deck.h": "c",
+    "round_state.h": "c"
   }
 }

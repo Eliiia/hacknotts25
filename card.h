@@ -5,6 +5,7 @@ Card of some kind!!!
 
 */
 
+// edition types, which apply for both playing cards and jokers
 typedef enum { 
     BASE_EDITION, 
     FOIL_EDITION, // playing card: +50 chips when scored 
